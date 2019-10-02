@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bpMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TravelExperts.Controller.MenuController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="335.0" prefWidth="200.0" style="-fx-background-color: #B35020FF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblMenu" alignment="CENTER" contentDisplay="CENTER" prefHeight="69.0" prefWidth="166.0" style="-fx-text-fill: white;" text="Menu" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Perpetua" size="47.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCustomer" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#OnCustomerClicked" style="-fx-text-fill: white;" text="Customers" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Perpetua" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblBooking" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#OnBookingClicked" style="-fx-text-fill: white;" text="Bookings" textAlignment="CENTER" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Perpetua" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPackage" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#OnPackageClicked" style="-fx-text-fill: white;" text="Travel Packages" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Perpetua" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblProduct" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#OnProductClicked" style="-fx-text-fill: white;" text="Products" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Perpetua" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSupplier" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#OnSupplierClicked" style="-fx-text-fill: white;" text="Suppliers" textAlignment="CENTER">
+               <font>
+                  <Font name="Perpetua" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lblSignout" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#OnSignOutClicked" style="-fx-text-fill: white;" text="Sign out" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Perpetua" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fitHeight="441.0" fitWidth="605.0" pickOnBounds="true">
+               <image>
+                  <Image url="@architecture-3076685_1920.jpg" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #2A2E36;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TravelExperts.Controller.BookingController">
+   <children>
+      <Label layoutX="332.0" layoutY="24.0" style="-fx-text-fill: #FF8C00;" text="Booking Details">
+         <font>
+            <Font name="Perpetua" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbBookingID" layoutX="292.0" layoutY="86.0" prefHeight="34.0" prefWidth="217.0" promptText="Select Booking ID" />
+      <Label fx:id="lblDateAndTime" layoutX="685.0" layoutY="513.0" style="-fx-text-fill: #FF8C00;" text="Date and Time">
+         <font>
+            <Font name="Perpetua" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBookingDate" layoutX="54.0" layoutY="184.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #FF8C00;" text="Booking Date" />
+      <Label fx:id="lblBookingNumber" layoutX="419.0" layoutY="182.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #FF8C00;" text="Booking Number" />
+      <TextField fx:id="teBookingNumber" layoutX="564.0" layoutY="178.0" prefHeight="25.0" prefWidth="170.0" />
+      <ComboBox fx:id="cbTravellerCount" layoutX="200.0" layoutY="227.0" prefHeight="25.0" prefWidth="170.0" promptText="Select Traveller Count" />
+      <Label fx:id="lblTravellerCount" layoutX="54.0" layoutY="231.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #FF8C00;" text="Traveller Count" />
+      <ComboBox fx:id="cbCustomerID" layoutX="565.0" layoutY="225.0" prefHeight="25.0" prefWidth="170.0" promptText="Select Customer ID" />
+      <Label fx:id="lblCustomerID" layoutX="419.0" layoutY="229.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #FF8C00;" text="Customer ID" />
+      <ComboBox fx:id="cbTripTypeID" layoutX="200.0" layoutY="270.0" prefHeight="25.0" prefWidth="170.0" promptText="Select Trip Type ID" />
+      <Label fx:id="lblTripTypeID" layoutX="54.0" layoutY="274.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #FF8C00;" text="Trip Type ID" />
+      <ComboBox fx:id="cbPackageID" layoutX="565.0" layoutY="268.0" prefHeight="25.0" prefWidth="170.0" promptText="Select Package ID" />
+      <Label fx:id="lblPackageID" layoutX="419.0" layoutY="272.0" prefHeight="17.0" prefWidth="120.0" style="-fx-text-fill: #FF8C00;" text="Package ID" />
+      <Button fx:id="btnNewBooking" layoutX="197.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnNewBooking" prefHeight="44.0" prefWidth="97.0" style="-fx-text-fill: #FF8C00; -fx-background-color: #2A2E36; -fx-border-radius: 10; -fx-border-color: #FF8C00;" text="New Booking" />
+      <Button fx:id="btnEditBooking" layoutX="306.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnEditBooking" prefHeight="44.0" prefWidth="97.0" style="-fx-text-fill: #FF8C00; -fx-background-color: #2A2E36; -fx-border-radius: 10; -fx-border-color: #FF8C00;" text="Edit Booking" />
+      <Button fx:id="btnSaveBooking" layoutX="415.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnSaveBooking" prefHeight="44.0" prefWidth="97.0" style="-fx-background-color: #2A2E36; -fx-border-radius: 10; -fx-border-color: #FF8C00; -fx-border-width: 2; -fx-text-fill: #FF8C00;" text="Save Booking" />
+      <Button fx:id="btnDeleteBooking" layoutX="522.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnDeleteBooking" prefHeight="44.0" prefWidth="104.0" style="-fx-text-fill: #FF8C00; -fx-background-color: #2A2E36; -fx-border-radius: 10; -fx-border-color: #FF8C00;" text="Delete Booking" />
+      <Button fx:id="btnMakePDFCopy" layoutX="638.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnMakePDFCopy" prefHeight="44.0" prefWidth="104.0" style="-fx-text-fill: #FF8C00; -fx-background-color: #2A2E36; -fx-border-radius: 10; -fx-border-color: #FF8C00;" text="Clear Fields" />
+      <Separator layoutY="564.0" prefHeight="3.0" prefWidth="800.0" />
+      <Label fx:id="lblUserName" layoutX="2.0" layoutY="512.0" style="-fx-text-fill: #FF8C00;" text="User Logged In:">
+         <font>
+            <Font name="Perpetua" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUserName1" layoutX="332.0" layoutY="511.0" style="-fx-text-fill: #FF8C00;" text="Travel Experts Pvt. Ltd.">
+         <font>
+            <Font name="Perpetua" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMainMenu" layoutX="83.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#btnMainMenu" prefHeight="45.0" prefWidth="100.0" style="-fx-text-fill: #FF8C00; -fx-background-color: #2A2E36; -fx-border-radius: 10; -fx-border-color: #FF8C00;" text="Main Menu" />
+      <DatePicker fx:id="dpBookingDate" layoutX="201.0" layoutY="179.0" prefHeight="25.0" prefWidth="170.0" promptText="Select Booking Date" />
+      <Button fx:id="btnInsertBooking" layoutX="414.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnInsertBooking" prefHeight="44.0" prefWidth="97.0" style="-fx-text-fill: #FF8C00; -fx-background-color: #2A2E36; -fx-border-radius: 10; -fx-border-color: #FF8C00;" text="Insert Booking" />
+   </children>
+</AnchorPane>

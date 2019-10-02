@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #2A2E36;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TravelExperts.Controller.PackageController">
+   <children>
+      <Label layoutX="308.0" layoutY="43.0" prefHeight="37.0" prefWidth="183.0" style="-fx-text-fill: #FF8C00;" text="Package Details Page">
+         <font>
+            <Font name="Perpetua" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbPackageID" layoutX="292.0" layoutY="97.0" prefHeight="30.0" prefWidth="215.0" promptText="Select Package ID" />
+      <Label layoutX="49.0" layoutY="194.0" style="-fx-text-fill: #FF8C00;" text="Package Name" />
+      <TextField fx:id="tfPkgName" layoutX="166.0" layoutY="190.0" prefHeight="25.0" prefWidth="170.0" />
+      <Label layoutX="419.0" layoutY="194.0" style="-fx-text-fill: #FF8C00;" text="Package Start Date" />
+      <Label layoutX="50.0" layoutY="247.0" style="-fx-text-fill: #FF8C00;" text="Package End Date" />
+      <Label layoutX="420.0" layoutY="245.0" style="-fx-text-fill: #FF8C00;" text="Package Description" />
+      <TextField fx:id="tfPkgDesc" layoutX="563.0" layoutY="240.0" prefHeight="25.0" prefWidth="170.0" />
+      <Label layoutX="49.0" layoutY="289.0" style="-fx-text-fill: #FF8C00;" text="Package Base Price" />
+      <TextField fx:id="tfPkgBasePrice" layoutX="168.0" layoutY="288.0" prefHeight="25.0" prefWidth="170.0" />
+      <Label layoutX="421.0" layoutY="292.0" style="-fx-text-fill: #FF8C00;" text="Agency Commission" />
+      <TextField fx:id="tfAgencyComm" layoutX="562.0" layoutY="288.0" prefHeight="25.0" prefWidth="170.0" />
+      <Button fx:id="btnEditPackage" layoutX="277.0" layoutY="387.0" mnemonicParsing="false" onAction="#btnEditPackage" prefHeight="45.0" prefWidth="100.0" style="-fx-text-fill: #FF8C00; -fx-background-color: #2A2E36; -fx-border-color: #FF8C00; -fx-border-radius: 10; -fx-border-width: 2;" text="Edit" />
+      <Button fx:id="btnMainMenu" layoutX="54.0" layoutY="387.0" mnemonicParsing="false" onMouseClicked="#btnMainMenu" prefHeight="45.0" prefWidth="100.0" style="-fx-text-fill: #FF8C00; -fx-background-color: #2A2E36; -fx-border-color: #FF8C00; -fx-border-radius: 10; -fx-border-width: 2;" text="Main Menu" />
+      <Button fx:id="btnSavePackage" layoutX="390.0" layoutY="387.0" mnemonicParsing="false" onAction="#btnSavePackage" prefHeight="45.0" prefWidth="100.0" style="-fx-text-fill: #FF8C00; -fx-background-color: #2A2E36; -fx-border-color: #FF8C00; -fx-border-radius: 10; -fx-border-width: 2;" text="Save" />
+      <Button fx:id="btnAddPackage" layoutX="166.0" layoutY="387.0" mnemonicParsing="false" onAction="#btnAddPackage" prefHeight="45.0" prefWidth="100.0" style="-fx-text-fill: #FF8C00; -fx-background-color: #2A2E36; -fx-border-color: #FF8C00; -fx-border-radius: 10; -fx-border-width: 2;" text="New Package" />
+      <Button fx:id="btnInsertPackage" layoutX="390.0" layoutY="388.0" mnemonicParsing="false" onAction="#btnInsertPackage" prefHeight="45.0" prefWidth="100.0" style="-fx-text-fill: #FF8C00; -fx-background-color: #2A2E36; -fx-border-color: #FF8C00; -fx-border-radius: 10; -fx-border-width: 2;" text="Insert Package" />
+      <Button fx:id="btnDeletePackage" layoutX="503.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnDeletePackage" prefHeight="45.0" prefWidth="100.0" style="-fx-text-fill: #FF8C00; -fx-background-color: #2A2E36; -fx-border-color: #FF8C00; -fx-border-radius: 10; -fx-border-width: 2;" text="Delete Package" />
+      <DatePicker fx:id="dpEndDate" layoutX="167.0" layoutY="240.0" prefHeight="25.0" prefWidth="170.0" />
+      <DatePicker fx:id="dpStartDate" layoutX="561.0" layoutY="190.0" prefHeight="25.0" prefWidth="170.0" />
+      <Separator layoutY="562.0" prefHeight="3.0" prefWidth="816.0" />
+      <Label fx:id="lblDateAndTime" layoutX="680.0" layoutY="518.0" style="-fx-text-fill: #FF8C00;" text="Date and Time">
+         <font>
+            <Font name="Perpetua" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUserName" layoutX="6.0" layoutY="517.0" style="-fx-text-fill: #FF8C00;" text="User Logged In:">
+         <font>
+            <Font name="Perpetua" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUserName1" layoutX="328.0" layoutY="518.0" style="-fx-text-fill: #FF8C00;" text="Travel Experts Pvt. Ltd.">
+         <font>
+            <Font name="Perpetua" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnClear" layoutX="616.0" layoutY="388.0" mnemonicParsing="false" onAction="#btnClear" prefHeight="45.0" prefWidth="100.0" style="-fx-text-fill: #FF8C00; -fx-background-color: #2A2E36; -fx-border-color: #FF8C00; -fx-border-radius: 10; -fx-border-width: 2;" text="Clear Fields" />
+   </children>
+</AnchorPane>

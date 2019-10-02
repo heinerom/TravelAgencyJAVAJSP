@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bpMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TravelExperts.Controller.SupplierController">
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="335.0" prefWidth="200.0" style="-fx-background-color: FF935C;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: white;" text="Suppliers" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="40.0" top="50.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Courier New Bold" size="28.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblAddSupplier" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: white;" text="Add New Supplier" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="40.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblEditSupplier" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: white;" text="Edit Supplier" textAlignment="CENTER" VBox.vgrow="NEVER">
+                    <VBox.margin>
+                        <Insets bottom="40.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblDeleteSupplier" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: white;" text="Delete Supplier" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="40.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblExit" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#onClickedExit" style="-fx-text-fill: white;" text="Back To Menu" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="40.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </left>
+</BorderPane>
